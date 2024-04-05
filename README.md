@@ -10,9 +10,10 @@ Project Setup
 Follow these steps to set up and run the project locally.
 
 Clone the Repository
-
+´´´
 git clone https://github.com/yourusername/meme-generator.git
 cd meme-generator
+´´´
 
 Install Dependencies
 PDF Ingestion: Install pdftotext for PDF file processing. Download it from here and add it to your system's PATH.
