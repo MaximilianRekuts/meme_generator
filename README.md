@@ -18,7 +18,7 @@ cd meme-generator
 
 Install Dependencies
 
-PDF Ingestion: Install pdftotext for PDF file processing. Download it from here https://www.xpdfreader.com/download.html and add it to your system's PATH.
+PDF Ingestion: Install pdftotext for PDF file processing. Download it from [here](https://www.xpdfreader.com/download.html) and add it to your system's PATH.
 
 Python Environment: Create and activate a virtual environment:
 
