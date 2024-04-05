@@ -12,59 +12,61 @@ Follow these steps to set up and run the project locally.
 Clone the Repository
 
 ```
-git clone https://github.com/yourusername/meme-generator.git
+git clone https://github.com/maximilian-rekuts/meme-generator.git
 cd meme-generator
 ```
 
 Install Dependencies
-PDF Ingestion: Install pdftotext for PDF file processing. Download it from here and add it to your system's PATH.
+
+PDF Ingestion: Install pdftotext for PDF file processing. Download it from here https://www.xpdfreader.com/download.html and add it to your system's PATH.
 
 Python Environment: Create and activate a virtual environment:
 
 With venv:
-
+```
 python3 -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-
+```
 Or with Conda:
-
+```
 conda create --name memeenv python=3.8
 conda activate memeenv
-
+```
 Install Required Packages:
-
+```
 pip install -r requirements.txt
-
+```
 Usage
 Generate a Random Meme
 To generate a random meme, simply run:
-
+```
 python main.py
-
+```
 Generate a Custom Meme
 To generate a meme with custom parameters, use:
-
+```
 python main.py --body "A quote body" --author "Author Name" --image_path "path/to/image.jpg"
-
+```
 For help:
-
+```
 python main.py -h
-
+```
 Web Interface
 Run the Flask app to generate memes through a web interface:
-
+```
 python app.py
-
+```
 Navigate to http://127.0.0.1:5000 in your web browser.
 
 Modules Description
 Quote Engine: Contains classes for ingesting quotes from different file formats, including CSV, DOCX, PDF, and TXT.
 Meme Engine: Handles image manipulation tasks such as resizing and adding text to images.
+
 Running Tests
 Ensure your code's integrity with:
-
+```
 python -m unittest
-
+```
 Deployment
 (Optional) Deploy the Flask app to a platform like Heroku for public access.
 
